@@ -1,0 +1,75 @@
+/* Tablet Viewport */
+@media(min-width: 601px) and (max-width: 1099px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas:
+            "hd hd"
+            "nav nav"
+            "slideshow slideshow"
+            "title title"
+            "posts posts"
+            "cards cards"
+            "collapsible collapsible"
+            "projects projects"
+            "divider divider"
+            "main main"
+            "sidebar sidebar"
+            "ft ft"; 
+    }
+
+    .hd {
+        padding: 5px;
+    }
+
+    .slideshow {
+        flex: 0 1 80%;
+        margin-bottom: 10px;
+    }
+
+    .posts {
+        flex: 0 1 80%;
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        flex: 0 1 60%;
+        overflow: auto;
+    }
+
+    .divider {
+        flex: 0 1 80%;
+        margin-bottom: 60px;
+    }
+
+    .collapsible {
+        flex: 0 1 80%;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        flex: 0 1 45%;
+        margin-bottom: 20px;
+        overflow: auto;
+    } 
+
+    .content {
+        flex: 0 1 45%;
+        margin-bottom: 20px;
+        overflow: auto;
+    } 
+
+    .sidebar {
+        flex: 0 2 80%;
+        margin-bottom: 20px;
+        overflow: auto;
+    } 
+
+    .main {
+        flex: 0 2 80%;
+        margin-bottom: 20px;
+        overflow: auto;
+    }
+}

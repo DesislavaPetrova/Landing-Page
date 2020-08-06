@@ -1,0 +1,64 @@
+/* Desktop Viewport */ 
+@media screen and (min-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas:
+            "hd nav nav"
+            "slideshow slideshow slideshow"
+            "title title title"
+            "posts posts posts"
+            "cards cards cards"
+            "collapsible collapsible collapsible"
+            "projects projects projects"
+            "divider divider divider"
+            "main main sidebar"
+            "ft ft ft";
+    }
+
+    .slideshow {
+        flex: 0 1 95%;
+        margin-bottom: 10px;
+    }
+
+    .posts {
+        flex: 0 1 95%;
+        margin-bottom: 10px;
+    }
+
+    .divider {
+        flex: 0 1 95%;
+        margin-bottom: 60px;
+    }
+
+    .collapsible {
+        flex: 0 1 95%;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        flex: 0 1 30%;
+        overflow: auto;
+    }
+
+    .projects {
+        flex: 0 1 95%;
+        overflow: auto;
+    }
+
+    .sidebar {
+        flex: 0 1 30%;
+        margin-bottom: 20px;
+        overflow: auto;
+        max-height: 920px;
+        position: static;
+    }
+
+    .main {
+        flex: 0 2 63%;
+        margin-bottom: 20px;
+        overflow: auto;
+    }
+}

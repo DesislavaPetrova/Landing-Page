@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <!-- set width to virtual viewport of device and zoom level to 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez|Roboto" type="text/css">
+        <title>VegaArch</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- Header -->
+            <nav class="nav_menu">
+                <header class="hd">
+                    <h1><a href="main.html">VegaArch</a></h1>
+                </header>
+                <!-- Navigation starts as empty UL that will be populated with JS -->
+                <ul id="nav_list"></ul>
+            </nav>
+
+            <!-- Slideshow container -->
+            <section class="slideshow active_class" id="section1" data-nav="Home">
+                <!-- Full-width images with number and caption text -->
+                <div class="slides fade">
+                    <img src="images/c0.jpg" style="width:100%">
+                </div>
+  
+                <div class="slides fade">
+                    <img src="images/c1.jpg" style="width:100%">
+                </div>
+  
+                <div class="slides fade">
+                    <img src="images/c2.jpg" style="width:100%">
+                </div>
+
+                <div class="slides fade">
+                    <img src="images/c3.jpg" style="width:100%">
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div>
+                    <span class="dot" onclick="current_slide(1)"></span>
+                    <span class="dot" onclick="current_slide(2)"></span>
+                    <span class="dot" onclick="current_slide(3)"></span>
+                    <span class="dot" onclick="current_slide(4)"></span>
+                </div>
+            </section>  
+
+            <div class="title">
+                <h3>Latest Projects</h3>
+            </div>
+
+            <!-- Recent Projects -->
+            <section class="posts" id="section2" data-nav="Projects">
+                <article class="card_content" id="section2">
+                    <a href="">
+                        <img class="responsive" src="images/MC_03_small.jpg" alt="Medical Center">
+                    </a>
+                    <a href="">
+                        <h2 class="card_title" href="">Medical Center Dr Staykov</h2>
+                    </a>
+                </article>
+
+                <article class="card_content" id="section2">
+                    <a href="">
+                        <img class="responsive" src="images/green_residence_01.jpg" alt="Green Residence">
+                    </a>
+                    <a href="">
+                        <h2 class="card_title" href="">Green Residence</h2>
+                    </a>
+                </article>
+
+                <article class="card_content" id="section2">
+                    <a href="">
+                        <img class="responsive" src="images/slaveikov_01.jpg" alt="Slaveikov Apartments">
+                    </a>
+                    <a href="">
+                        <h2 class="card_title" href="">Slaveikov Apartments</h2>
+                    </a>
+                </article>
+
+                <button id="button" onclick="" type="button" class="collapsible">More Projects</button>
+                <div class="projects">
+                    <article class="card_content">
+                        <a href="">
+                            <img class="responsive" src="images/banevo_00.jpg" alt="Banevo House">
+                        </a>
+                        <a href="">
+                            <h2 class="card_title" href="">Banevo House</h2>
+                        </a>
+                    </article>
+    
+                    <article class="card_content">
+                        <a href="">
+                            <img class="responsive" src="images/medovo_00.jpg" alt="Medovo House">
+                        </a>
+                        <a href="">
+                            <h2 class="card_title" href="">Medovo House</h2>
+                        </a>
+                    </article>
+    
+                    <article class="card_content">
+                        <a href="">
+                            <img class="responsive" src="images/demo_00.jpg" alt="Demokratzia Apartments">
+                        </a>
+                        <a href="">
+                            <h2 class="card_title" href="">Demokratzia Apartments</h2>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            
+            <div class="cards">
+                <div class="divider">
+                    <hr>
+                </div>
+
+                <!-- Main Blog Post -->
+                <section class="main" id="section3" data-nav="Blog">
+                    <header class="main_content">
+                        <time datetime="2020-07-18T15:00" class="main_time">July 18, 2020 by Desi</time>
+                        <h3 class="main_title">Medical Center Dr Staykov</h3>
+                     </header>
+                    <img class="responsive" src="images/MC_00.jpg" alt="Medical Center Night">
+                    <p>Designed by <strong>STUDIO CREARCH</strong> with lead Architect Desislava Petrova, <em>Medical Center Dr Staykov</em> embodies the mission to provide “exceptional care without exception.” Located on a highly visible 
+                    site, next to Plaza Mall in Izgrev Building Complex in Burgas, the five-story building represents reconstruction and refurbishment of an existing office building. This new medical center is an 
+                    expansion of the existing Dr Staykov Rehabilitation Center located in the center of the city.
+                    </p>
+                    <button id="button" onclick="location.href=''" type="button">Read More</button>
+                </section>
+
+                <!-- Sidebar -->
+                <section class="sidebar" id="section4" data-nav="About"> 
+                    <h3 class="sidebar_title">About Me</h3>
+                    <div>
+                        <img id="text_wrap" class="responsive" src="images/1.jpg" alt="My profile picture">
+                        <p>Hi! I’m Desi. Starting from a young age I loved building models and structures, drawing and experimenting with different forms, materials and techniques. Through the years those passions 
+                        of mine have translated into an interest in Web Design and Front-end development. And now I’m currently working on pursuing a career in this field.
+                        </p> 
+                        <button id="button" onclick="" type="button">Read More</button>
+                    </div>    
+                    <div >
+                        <h3 class="media_title">Stay connected</h3>
+                        <a class=social_media href="https://www.facebook.com/desislava.petrova.1884">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                        <a class=social_media href="https://www.instagram.com/desislava.p.petrova/">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a class=social_media href="https://twitter.com">
+                            <img src="images/twitter.png" alt="Twitter">
+                        </a>  
+                        <a class=social_media href="https://www.pinterest.com/">
+                            <img src="images/pinterest.png" alt="Pinterest">
+                        </a>  
+                        <a class=social_media href="https://www.behance.net/desia07d">
+                            <img src="images/behance.png" alt="Behance">
+                        </a> 
+                        <a class=social_media href="https://www.youtube.com/">
+                            <img src="images/youtube.png" alt="YouTube">
+                        </a> 
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <aside id="newsletter">
+                        <h3 class="newsletter_title">Never miss a post!</h3>
+                        <form action="#" id="subscribe-form">
+                            <input type="text" placeholder="Name" name="name" required>
+                            <input type="text" placeholder="Email address" name="email" required>
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </aside>
+                </section>  
+            </div> 
+
+            <!-- Back To Top Button -->
+            <button onclick="topFunction()" id="backToTop" title="Go to top">&#8673;</button>
+               
+            <!-- Footer -->
+            <footer class="ft">
+                Created with &hearts; by Desislava Petrova
+            </footer>
+        </div>
+        
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

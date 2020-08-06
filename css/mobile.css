@@ -1,0 +1,69 @@
+/* Mobile Viewport */
+@media(max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas:
+            "hd"
+            "nav"
+            "slideshow"
+            "title"
+            "posts"
+            "cards"
+            "collapsible"
+            "projects"
+            "divider"
+            "main" 
+            "sidebar" 
+            "ft";
+    }
+
+    .posts {
+        flex: 0 1 80%;
+    }
+
+    .slideshow {
+        flex: 0 1 90%;
+        margin-bottom: 10px;
+    }
+
+    .divider {
+        flex: 0 1 90%;
+        margin-bottom: 10px;
+    }
+
+    .collapsible {
+        flex: 0 1 90%;
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        flex: 0 1 100%;.
+        overflow: auto;
+    }
+
+    .card {
+        flex: 0 1 80%;
+        margin-bottom: 60px;
+        overflow: auto;
+    }
+
+    .content {
+        flex: 0 1 80%;
+        margin-bottom: 60px;
+        overflow: auto;
+    }
+
+    .sidebar {
+        flex: 0 1 90%;
+        overflow: auto;
+    }
+
+    .main {
+        flex: 0 1 90%;
+        margin-bottom: 20px;
+        overflow: auto;
+    }
+}
